@@ -1,6 +1,6 @@
 {
   "name": "fontmoa.com",
-  "version": "1.0",
+  "version": "1.0.0",
   "scripts": {
       "docs:dev": "vuepress dev docs",
       "docs:build": "vuepress build docs"
