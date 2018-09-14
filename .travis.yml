@@ -1,7 +1,30 @@
+language: node_js
+node_js:
+    - "10"
+env:
+    - CXX=g++-4.8
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+        packages:
+            - g++-4.8
+install:
+    - npm install -g vuepress
+script:
+    - npm run docs:build
+cache:
+    directories:
+        - "node_modules"
+notifications:
+    email: false
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: 97a10439b352247c7d5e63b122094f7aef169775  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
+    provider: pages
+    skip-cleanup: true
+    local_dir: docs/.vuepress/dist
+    github-token: 97a10439b352247c7d5e63b122094f7aef169775  # Set in the settings page of your repository, as a secure variable
+    repo: fontmoa/fontmoa.com
+    keep-history: true
+    target-branch: master
+    on:
+        branch: master
