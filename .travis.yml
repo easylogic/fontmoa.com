@@ -12,7 +12,7 @@ addons:
 install:
     - npm install -g vuepress
 script:
-    - npm run docs:build
+    - npm run docs:build && cat "fontmoa.com" > docs/.vuepress/dist/CNAME
 cache:
     directories:
         - "node_modules"
@@ -25,6 +25,6 @@ deploy:
     github-token: 97a10439b352247c7d5e63b122094f7aef169775  # Set in the settings page of your repository, as a secure variable
     repo: fontmoa/fontmoa.com
     keep-history: true
-    target-branch: master
+    target-branch: gh-pages
     on:
         branch: master
