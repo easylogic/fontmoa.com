@@ -22,7 +22,7 @@ deploy:
     provider: pages
     skip-cleanup: true
     local_dir: docs/.vuepress/dist
-    github-token: d2df3b74341a0d8d3c91dda139b95ae3f6551185  # Set in the settings page of your repository, as a secure variable
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     repo: fontmoa/fontmoa.com
     keep-history: true
     target-branch: gh-pages
