@@ -1,5 +1,7 @@
 ---
 home: true
+title: Fontmoa
+description: Simple Font Manager for Opensource font 
 features:
 - title: Fontmoa
   details: Simple Font Manager for Opensource font 
