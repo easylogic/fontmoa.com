@@ -1,3 +1,15 @@
+---
+home: true
+features:
+- title: Fontmoa
+  details: Simple Font Manager for Opensource font 
+- title: Icons
+  details: 
+- title: Editor
+  details: 
+footer: MIT Licensed | Copyright © 2018-present easylogic, fontmoa.com
+---
+
 # Hello, fontmoa.com!!! 
 
 안녕하세요. 여긴 폰트모아 입니다. 
