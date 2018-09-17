@@ -1,4 +1,6 @@
 module.exports = {
-  base: '/'
+  base: '/',
+  title: 'Fontmoa',
+  description: 'Welcome to fontmoa!!'
   
 }
